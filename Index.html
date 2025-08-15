@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<!-- MODIFICATION: Changed default theme to light -->
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- =================================================================== -->
+    <!-- ======================= SEO META TAGS =========================== -->
+    <!-- =================================================================== -->
+    <title>White Paper Systems | Affordable Workforce & B-BBEE Solutions SA</title>
+    <meta name="description" content="Cut staffing costs by up to 80% with White Paper Systems. We provide pre-screened, funded learners for your business in Pretoria & across South Africa, boosting your B-BBEE and Skills Development scores.">
+    <meta name="keywords" content="affordable workforce solutions, learnership placement, B-BBEE compliance, skills development, host employer services, SETA learnerships, staffing solutions South Africa, Pretoria workforce">
+    <link rel="canonical" href="https://systems.whitepaperconcepts.co.za">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://systems.whitepaperconcepts.co.za">
+    <meta property="og:title" content="White Paper Systems | Affordable Workforce & B-BBEE Solutions SA">
+    <meta property="og:description" content="Cut staffing costs by up to 80% with White Paper Systems. We provide pre-screened, funded learners for your business in Pretoria & across South Africa, boosting your B-BBEE and Skills Development scores.">
+    <meta property="og:image" content="https://static.wixstatic.com/media/da684c_bb367b3fe0e346b8887c22155adca712~mv2.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://systems.whitepaperconcepts.co.za">
+    <meta property="twitter:title" content="White Paper Systems | Affordable Workforce & B-BBEE Solutions SA">
+    <meta property="twitter:description" content="Cut staffing costs by up to 80% with White Paper Systems. We provide pre-screened, funded learners for your business in Pretoria & across South Africa, boosting your B-BBEE and Skills Development scores.">
+    <meta property="twitter:image" content="https://static.wixstatic.com/media/da684c_bb367b3fe0e346b8887c22155adca712~mv2.jpg">
+    
+    <!-- =================================================================== -->
+    <!-- =================== STRUCTURED DATA (SCHEMA) ==================== -->
+    <!-- =================================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "White Paper Systems",
+      "image": "https://static.wixstatic.com/media/da684c_27c4eac60c4c494db93010f668beb751~mv2.png",
+      "@id": "https://systems.whitepaperconcepts.co.za",
+      "url": "https://systems.whitepaperconcepts.co.za",
+      "telephone": "+27872651890",
+      "description": "White Paper Systems provides visionary workforce solutions in South Africa, specializing in cost-effective learnership placements that help businesses reduce staffing costs and meet B-BBEE and Skills Development targets.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "57 Street Joseph Avenue, Pretoria, Gauteng, 0021",
+        "addressLocality": "Pretoria",
+        "addressCountry": "ZA"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Learnership Recruitment & Hosting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "B-BBEE Consulting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Skills Development Facilitation"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /*
+          ============================================
+          FINAL AGENCY DESIGN - DESIGN SYSTEM
+          ============================================
+          Engineer: Gemini
+          Philosophy: A direct architectural translation of the client's reference.
+          This design uses a confident asymmetrical grid, purposeful accents, and a
+          flawless typographic hierarchy to deliver a powerful and professional
+          user experience. All content is implemented verbatim.
+        */
+
+        :root {
+            /* 1. REFINED COLOR PALETTE (DARK MODE) */
+            --brand-hue: 232; 
+            --color-brand-primary: hsl(var(--brand-hue), 90%, 65%);
+            --color-brand-glow: hsla(var(--brand-hue), 90%, 65%, 0.4);
+            --color-text-primary: hsl(0, 0%, 98%);
+            --color-text-secondary: hsl(0, 0%, 70%);
+            --color-bg-primary: hsl(0, 0%, 8%);
+            --color-bg-offset: hsl(0, 0%, 12%);
+            --color-border: hsla(0, 0%, 100%, 0.1);
+            --color-bg-card: hsl(220, 25%, 15%); /* Light blue for dark mode cards */
+
+
+            /* 2. TYPOGRAPHY */
+            --ff-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --h1: 700 clamp(2.5rem, 7vw, 4rem)/1.2 var(--ff-primary);
+            --h2: 700 clamp(1.75rem, 5vw, 2.5rem)/1.2 var(--ff-primary);
+            --h3: 700 1.2rem/1.3 var(--ff-primary);
+            --p-body: 400 1.05rem/1.8 var(--ff-primary);
+            
+            /* 3. TRANSITIONS */
+            --transition-speed: 0.4s;
+            --transition-curve: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        :root.light {
+            /* REFINED COLOR PALETTE (LIGHT MODE) */
+            --color-brand-primary: hsl(var(--brand-hue), 80%, 55%);
+            --color-brand-glow: hsla(var(--brand-hue), 80%, 55%, 0.3);
+            --color-text-primary: hsl(0, 0%, 10%);
+            --color-text-secondary: hsl(0, 0%, 45%);
+            --color-bg-primary: hsl(0, 0%, 100%);
+            --color-bg-offset: hsl(0, 0%, 97%);
+            --color-border: hsla(0, 0%, 0%, 0.1);
+            --color-bg-card: hsl(210, 80%, 96%); /* Light blue for light mode cards */
+        }
+
+        /* Global styles */
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            font: var(--p-body);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        /* Typography mapping */
+        h1, .h1 { font: var(--h1); }
+        h2, .h2 { font: var(--h2); }
+        h3, .h3 { font: var(--h3); }
+        p { max-width: 60ch; }
+
+        /* Component Styles */
+        .btn { display: inline-block; font-weight: 500; text-align: center; border-radius: 9999px; padding: 0.75rem 1.5rem; transition: all var(--transition-speed) var(--transition-curve); }
+        .btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+        .btn-primary { background-color: var(--color-brand-primary); color: hsl(0, 0%, 100%); }
+        .btn-primary:hover { transform: scale(1.05); filter: brightness(1.1); }
+        
+        /* Scroll Animation Setup */
+        .reveal { opacity: 0; transition: opacity 1s var(--transition-curve), transform 1s var(--transition-curve); transition-delay: var(--delay, 0s); }
+        .reveal-up { transform: translateY(60px); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        
+        #home {
+            transition: border-radius 0.5s var(--transition-curve);
+        }
+        #home.scrolled {
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+        .services-heading-specific {
+            font-size: clamp(2.2rem, 7vw, 3.6rem); 
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.05em;
+        }
+
+        .intro-glow-container {
+            position: relative;
+        }
+        .intro-glow-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            max-width: 1200px;
+            background: radial-gradient(ellipse at center, var(--color-brand-glow) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .gradient-heading {
+            background: linear-gradient(90deg, hsl(var(--brand-hue), 100%, 80%), var(--color-brand-primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .huge-heading {
+            font-size: clamp(3rem, 10vw, 6.5rem);
+            line-height: 1.1;
+            letter-spacing: -0.05em;
+        }
+        
+        .accordion-item {
+             margin-bottom: 1rem;
+        }
+        .accordion-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-radius: 9999px;
+            background: linear-gradient(to right, #0f1fb0, #2a65f6, #0f1fb0);
+            background-size: 200% auto;
+            color: white;
+            transition: background-position 0.5s ease;
+            position: relative;
+            z-index: 2;
+        }
+        .accordion-header:hover {
+            background-position: right center;
+        }
+        .accordion-header h3 {
+            color: white;
+            font-size: 1.25rem;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s var(--transition-curve), padding-top 0.5s var(--transition-curve);
+        }
+        .accordion-item.active .accordion-content {
+             padding-top: 2.5rem;
+        }
+        .accordion-content-inner {
+            padding: 2rem;
+            background-color: var(--color-bg-primary);
+            border: 1px solid var(--color-border);
+            border-radius: 1.5rem;
+            margin-top: -2.5rem;
+        }
+        .accordion-icon {
+            transition: transform 0.3s ease;
+            color: white;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+        
+        .other-services-accordion-item {
+            border-bottom: 1px solid transparent;
+        }
+        .other-services-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            border-radius: 0.75rem;
+            background: linear-gradient(to right, #0f1fb0, #2a65f6, #0f1fb0);
+            background-size: 200% auto;
+            transition: background-position 0.5s ease;
+            margin-bottom: 1rem;
+        }
+        .other-services-header:hover {
+            background-position: right center;
+        }
+        .other-services-header h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+        }
+        .other-services-toggle {
+            font-weight: 500;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        .other-services-accordion-item.active .other-services-toggle {
+            transform: rotate(180deg);
+        }
+        .other-services-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s var(--transition-curve), padding 0.5s var(--transition-curve);
+        }
+        .other-services-content-inner {
+            padding: 0 1rem 1.5rem 1rem;
+            margin-top: -1rem;
+            background-color: var(--color-bg-offset);
+            border-radius: 0.75rem;
+            padding-top: 1.5rem;
+        }
+        
+        .faq-accordion-item {
+            border-bottom: 1px solid var(--color-border);
+        }
+        .faq-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            cursor: pointer;
+        }
+        .faq-header h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-right: 1rem;
+        }
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--color-text-secondary);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        .faq-accordion-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s var(--transition-curve), padding-bottom 0.5s var(--transition-curve);
+        }
+        .faq-content p {
+            padding-bottom: 1.5rem;
+            color: var(--color-text-secondary);
+        }
+
+        .marquee {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 1rem;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 1rem;
+            animation: scroll 20s linear infinite;
+        }
+        .marquee-content > * {
+            margin: 0 1rem;
+        }
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-100% - 1rem)); }
+        }
+
+        .btn-gradient-animated {
+            background: linear-gradient(to right, #0f1fb0, #2a65f6, #0f1fb0);
+            background-size: 200% auto;
+            color: white;
+            transition: background-position 0.5s ease;
+        }
+        .btn-gradient-animated:hover {
+            background-position: right center;
+        }
+
+        .btn-orange {
+            background: linear-gradient(to right, #ff8c00, #ffa500);
+            color: white;
+            box-shadow: none;
+            transform: scale(1);
+            transition: all 0.3s ease;
+        }
+        .btn-orange:hover {
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+            transform: scale(1.05);
+        }
+
+        .gradient-heading-animated {
+            background: linear-gradient(to right, #0f1fb0, #2a65f6, #0f1fb0);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: background-position 0.5s ease;
+        }
+        .gradient-heading-animated:hover {
+            background-position: right center;
+        }
+        
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid var(--color-border);
+            background-color: transparent;
+            color: var(--color-text-secondary);
+        }
+        .tab-button:hover:not(.active) {
+            background-color: var(--color-bg-offset);
+            color: var(--color-text-primary);
+        }
+        .tab-button.active {
+            background: linear-gradient(to right, #0f1fb0, #2a65f6, #0f1fb0);
+            background-size: 200% auto;
+            color: white;
+            border-color: transparent;
+            transition: background-position 0.5s ease;
+        }
+        .tab-button.active:hover {
+            background-position: right center;
+        }
+        .tab-pane {
+            transition: opacity 0.5s ease;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+        .tab-pane.hidden {
+            display: none;
+        }
+        #mission-vision-values .tab-pane {
+             background-color: var(--color-bg-card);
+             border: 1px solid var(--color-border);
+        }
+        .values-list, .services-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .values-list li, .services-list li {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .values-list li::before, .services-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--color-brand-primary);
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+        #services .tab-button {
+            flex-grow: 1;
+        }
+        #services .tab-pane {
+            background-color: var(--color-bg-offset);
+        }
+        #services .services-list {
+            list-style-type: decimal;
+        }
+        #services .services-list li::before {
+            content: '';
+        }
+
+        body, a, button, .accordion-header {
+            cursor: none;
+        }
+        .custom-cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+        }
+        .custom-cursor::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 4px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 16px solid var(--color-brand-primary);
+            z-index: 2;
+        }
+        .custom-cursor::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid white;
+            z-index: 1;
+        }
+        .custom-cursor.hover {
+            transform: translate(-50%, -50%) scale(1.8);
+            opacity: 0.5;
+        }
+        
+        @media (hover: none) or (pointer: coarse) {
+            .custom-cursor {
+                display: none !important;
+            }
+            body, a, button, .accordion-header {
+                cursor: auto;
+            }
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="custom-cursor"></div>
+
+    <header id="header" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-4xl px-4 transition-all duration-300">
+        <div class="bg-black/10 backdrop-blur-lg border border-color rounded-full">
+            <nav class="px-6 py-3 flex justify-between items-center">
+                <a href="#home" class="flex items-center">
+                    <img src="https://static.wixstatic.com/media/da684c_27c4eac60c4c494db93010f668beb751~mv2.png" alt="WPS Logo" class="h-10 w-auto mr-4">
+                </a>
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="#intro" class="text-white hover:opacity-80 transition-opacity">About</a>
+                    <a href="#services" class="text-white hover:opacity-80 transition-opacity">Services</a>
+                    <a href="#industries" class="text-white hover:opacity-80 transition-opacity">Industries</a>
+                    <a href="#why-wps" class="text-white hover:opacity-80 transition-opacity">Why WPS</a>
+                </div>
+                <div class="flex items-center">
+                     <button id="theme-switcher" class="p-2 rounded-full focus:outline-none mr-2">
+                         <svg id="sun-icon" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                         <svg id="moon-icon" class="h-5 w-5 text-white hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                     </button>
+                    <a href="#cta" class="btn btn-gradient-animated hidden md:inline-block">Contact Us</a>
+                    <a href="https://wa.me/message/NANB2PF37GVJM1" target="_blank" rel="noopener noreferrer" class="ml-2 md:ml-4 inline-block p-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 hover:scale-110 transition-transform">
+                        <img src="https://static.wixstatic.com/shapes/da684c_dc8df6a1ee0149cf890b504fced751d5.svg" alt="WhatsApp" class="h-6 w-6">
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden p-2 ml-2 rounded-md text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black/10 backdrop-blur-lg rounded-2xl mt-2 border border-color">
+            <a href="#intro" class="block py-3 px-6 text-white hover:bg-white/10">About</a>
+            <a href="#services" class="block py-3 px-6 text-white hover:bg-white/10">Services</a>
+            <a href="#industries" class="block py-3 px-6 text-white hover:bg-white/10">Industries</a>
+            <a href="#why-wps" class="block py-3 px-6 text-white hover:bg-white/10">Why WPS</a>
+            <a href="#cta" class="block py-3 px-6 text-white hover:bg-white/10">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="relative flex items-end justify-center text-center bg-cover bg-center overflow-hidden" style="min-height: 100vh; background-image: url('https://static.wixstatic.com/media/da684c_bb367b3fe0e346b8887c22155adca712~mv2.jpg');">
+            <div class="z-10 px-6 pb-12 md:pb-16 lg:pb-20">
+                <h1 class="text-5xl md:text-7xl font-black text-white uppercase reveal reveal-up">Get Affordable Workforce</h1>
+                <h2 class="text-xl md:text-2xl font-bold text-white mt-4 reveal reveal-up" style="--delay: 0.1s;">Cut Staff Costs. Boost Compliance. Grow With Confidence.</h2>
+                <p class="text-white mt-8 max-w-3xl mx-auto reveal reveal-up" style="--delay: 0.2s;">We connect you with pre-screened learners who work in your business for 6–12 months at no salary cost — saving you up to 80% in staffing expenses while helping you meet your B-BBEE and Skills Development targets.</p>
+                <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 reveal reveal-up" style="--delay: 0.3s;">
+                    <a href="mailto:systems@whitepaperconcepts.co.za" class="btn btn-gradient-animated text-lg border-2 border-white/50">Book a Free Consultation</a>
+                    <a href="https://da684c74-4877-4c07-a586-b3f4d8edcf87.usrfiles.com/ugd/da684c_240332cc396744889a7366add0ef5ade.pdf" class="btn btn-orange text-lg">Download Our Placement Guide</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="promise" class="py-16 md:py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="huge-heading font-black uppercase gradient-heading-animated mb-4 reveal reveal-up">Our Promise to You</h2>
+                <p class="text-secondary text-lg max-w-3xl mx-auto mb-16 reveal reveal-up" style="--delay: 0.1s;">Running a business in South Africa isn’t easy; rising wages, compliance pressures, and the need to stay competitive can hold you back. White Paper Systems (WPS) offers a smarter way forward:</p>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
+                    <div class="bg-bg-offset rounded-2xl border border-color reveal reveal-up overflow-hidden" style="--delay: 0.2s;">
+                        <div class="p-4" style="background: linear-gradient(to right, #0f1fb0, #2a65f6);">
+                            <h3 class="h3 text-white text-center">Affordable Workforce</h3>
+                        </div>
+                        <div class="p-8">
+                            <p class="text-secondary">Learners are funded through accredited learnership grants, so you don’t carry salary costs.</p>
+                        </div>
+                    </div>
+                    <div class="bg-bg-offset rounded-2xl border border-color reveal reveal-up overflow-hidden" style="--delay: 0.3s;">
+                        <div class="p-4" style="background: linear-gradient(to right, #0f1fb0, #2a65f6);">
+                            <h3 class="h3 text-white text-center">Full-Service Management</h3>
+                        </div>
+                        <div class="p-8">
+                            <p class="text-secondary">We handle all recruitment, hosting, SETA registration, training alignment, and compliance documentation.</p>
+                        </div>
+                    </div>
+                    <div class="bg-bg-offset rounded-2xl border border-color reveal reveal-up overflow-hidden" style="--delay: 0.4s;">
+                        <div class="p-4" style="background: linear-gradient(to right, #0f1fb0, #2a65f6);">
+                            <h3 class="h3 text-white text-center">Measurable Results</h3>
+                        </div>
+                        <div class="p-8">
+                            <p class="text-secondary">Boost productivity, improve your B-BBEE score, and build a talent pipeline.</p>
+                        </div>
+                    </div>
+                </div>
+                 <p class="text-secondary font-bold text-xl max-w-3xl mx-auto mt-16 reveal reveal-up" style="--delay: 0.5s;">With us, you’re not just filling positions — you’re creating a strategy for sustainable growth.</p>
+            </div>
+        </section>
+
+        <section id="stats" class="relative bg-cover bg-center bg-fixed" style="background-image: url('https://static.wixstatic.com/media/da684c_b574c275430c4c93a564155acfcc8170~mv2.png');">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative container mx-auto px-6 py-24 md:py-32">
+                <div class="bg-black/20 backdrop-blur-xl border border-white/10 rounded-3xl shadow-xl max-w-5xl mx-auto p-8 md:p-12 reveal reveal-up">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                        <div class="flex flex-col items-center">
+                            <p class="text-5xl font-black gradient-heading">80%</p>
+                            <p class="text-base text-white/80 mt-2">
+                                <strong class="text-white">Up to 80% Cost Savings</strong>
+                                <span class="block text-sm">Reduce payroll overhead without sacrificing talent quality.</span>
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-5xl font-black gradient-heading">20+</p>
+                            <p class="text-base text-white/80 mt-2">
+                                <strong class="text-white">Up to 20 Skills Development Points</strong>
+                                <span class="block text-sm">Directly improve your B-BBEE rating.</span>
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-5xl font-black gradient-heading">100%</p>
+                            <p class="text-base text-white/80 mt-2">
+                                <strong class="text-white">Focused on Business</strong>
+                                <span class="block text-sm">We handle everything so you can focus on your core business.</span>
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-5xl font-black gradient-heading">100s</p>
+                            <p class="text-base text-white/80 mt-2">
+                                <strong class="text-white">Learners Helped</strong>
+                                <span class="block text-sm">and gain a working experience.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="pt-12 md:pt-16 pb-24 md:pb-32">
+            <div class="container mx-auto px-6">
+                <h2 class="huge-heading font-black uppercase gradient-heading-animated mb-16 text-center reveal reveal-up">
+                    Lets help you save
+                </h2>
+                <div class="intro-glow-container">
+                    <div class="grid md:grid-cols-2 gap-16 items-center">
+                        <div class="reveal reveal-up">
+                            <img src="https://static.wixstatic.com/media/da684c_1a73d6d32052443ca93b31f9b5d043cf~mv2.png" alt="A diverse team in a modern office working together" class="rounded-3xl w-full h-auto object-cover">
+                        </div>
+                        <div class="text-center md:text-left reveal reveal-up" style="--delay: 0.1s;">
+                             <h3 class="text-2xl font-bold mb-6">SAVE. COMPLY. GROW.</h3>
+                             <p class="text-secondary mb-8 mx-auto md:mx-0">At White Paper Systems (WPS), we believe you shouldn’t have to choose between cutting costs and growing your business. That’s why we offer an innovative recruitment and hosting model that allows you to employ qualified learners at no salary cost — you only pay a low monthly administration fee.</p>
+                             <p class="text-secondary mx-auto md:mx-0">We take care of everything: sourcing the right candidates, managing the placement, aligning training with your operations, and ensuring you gain the maximum B-BBEE and Skills Development benefits. All you need to do is welcome your new team members and watch your business grow.</p>
+                             <div class="mt-8">
+                                 <a href="mailto:systems@whitepaperconcepts.co.za" class="btn btn-gradient-animated text-lg">Start today</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 md:py-32 rounded-[3rem]" style="background: linear-gradient(180deg, #0f1fb0 0%, #2a65f6 100%);">
+             <div class="container mx-auto px-6">
+                 <div class="grid md:grid-cols-2 gap-16 items-center">
+                     <div class="reveal reveal-up">
+                         <img src="https://static.wixstatic.com/media/da684c_e1f822931ec740c4a177ba13beed18cc~mv2.jpg" alt="Team collaborating in a modern office" class="rounded-3xl w-full h-auto object-cover shadow-2xl">
+                     </div>
+                     <div class="text-center md:text-left reveal reveal-up" style="--delay: 0.1s;">
+                         <h2 class="h2 md:text-5xl text-white">Your Workforce Growth Partner</h2>
+                         <p class="text-gray-300 mt-8">White Paper Systems was founded with one goal: to help South African businesses grow smarter. We saw too many companies struggling to balance the cost of hiring with the need to stay compliant and competitive. Our solution? An innovative recruitment and hosting model that delivers both operational and compliance benefits at once.</p>
+                         <p class="text-gray-300 mt-6">Over the years, we’ve built a nationwide network of associates, SETA-accredited training partners, and skilled consultants; allowing us to place learners in almost any sector and manage the entire process seamlessly.</p>
+                     </div>
+                 </div>
+             </div>
+          </section>
+
+        <section id="mission-vision-values" class="py-16 md:py-20 bg-bg-offset">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal reveal-up">
+                    <h2 class="h2">Our Guiding Principles</h2>
+                    <p class="text-secondary max-w-3xl mx-auto mt-6">Our mission, vision, and values are the foundation of our partnership with you.</p>
+                </div>
+        
+                <div id="values-tabs" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 reveal reveal-up" style="--delay: 0.1s;">
+                    <button class="tab-button active" data-tab="mission-content">Our Mission</button>
+                    <button class="tab-button" data-tab="vision-content">Our Vision</button>
+                    <button class="tab-button" data-tab="values-content">Our Values</button>
+                </div>
+        
+                <div class="max-w-3xl mx-auto text-left reveal reveal-up" style="--delay: 0.2s;">
+                    <div id="mission-content" class="tab-pane rounded-2xl">
+                        <p class="text-secondary">To provide cost-effective workforce solutions that create measurable business value while empowering the next generation of skilled professionals.</p>
+                    </div>
+                    <div id="vision-content" class="tab-pane hidden rounded-2xl">
+                         <p class="text-secondary">To be the most trusted, results-driven workforce solutions partner in South Africa, known for service excellence and meaningful transformation.</p>
+                    </div>
+                    <div id="values-content" class="tab-pane hidden rounded-2xl">
+                        <ul class="values-list space-y-4">
+                            <li><strong class="text-primary">Integrity:</strong><span class="text-secondary"> Honest advice, transparent processes, and ethical business.</span></li>
+                            <li><strong class="text-primary">Excellence:</strong><span class="text-secondary"> We aim higher in everything we do.</span></li>
+                            <li><strong class="text-primary">Impact:</strong><span class="text-secondary"> Every placement transforms a life and strengthens the economy.</span></li>
+                            <li><strong class="text-primary">Partnership:</strong><span class="text-secondary"> We treat your business as if it were our own.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-3 gap-16">
+                    <div class="lg:col-span-1 reveal reveal-up">
+                         <div class="text-left sticky top-28">
+                            <span class="block text-2xl font-medium text-secondary -mb-3">CORE</span>
+                            <h2 class="services-heading-specific gradient-heading-animated">SERVICES</h2>
+                            <hr class="my-4 border-t-2 border-brand-primary w-full" style="border-image: linear-gradient(to right, var(--color-brand-primary), transparent) 1;">
+                            <p class="text-2xl font-bold text-primary">Recruitment & Hosting</p>
+                         </div>
+                    </div>
+                    <div class="lg:col-span-2 reveal reveal-up" id="accordion-container" style="--delay: 0.1s;">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Why Businesses Choose This</h3>
+                                <div class="accordion-icon text-3xl font-light">+</div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p class="text-secondary">Hiring new employees is costly — not just in salaries, but in recruitment time, onboarding, training, benefits, and compliance admin. For many businesses, this slows growth. Our hosting model flips that on its head.</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>How It Works in Detail</h3>
+                                <div class="accordion-icon text-3xl font-light">+</div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ol class="services-list space-y-3 text-secondary">
+                                        <li><strong>Needs Analysis:</strong> We arrange a consultation to understand your operational needs, industry requirements, and compliance targets.</li>
+                                        <li><strong>Candidate Sourcing:</strong> We select from our pool of pre-screened learners who are already enrolled in accredited learnership programs relevant to your industry.</li>
+                                        <li><strong>Placement:</strong> Learners join your team for 6–12 months, gaining experience while contributing to your operations.</li>
+                                        <li><strong>Management & Reporting:</strong> We handle contracts, learner support, and compliance documentation.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>What’s Included in Our Hosting Service</h3>
+                                <div class="accordion-icon text-3xl font-light">+</div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                     <ul class="services-list space-y-3 text-secondary">
+                                         <li>End-to-end recruitment of learners</li>
+                                         <li>Pre-screening for skills, attitude, and fit</li>
+                                         <li>Coordination of training with accredited providers</li>
+                                         <li>Monthly progress tracking and issue resolution</li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Your Business Gains</h3>
+                                <div class="accordion-icon text-3xl font-light">+</div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul class="services-list space-y-3 text-secondary">
+                                        <li><strong>Cost Savings:</strong> No salary costs — only an affordable monthly admin fee.</li>
+                                        <li><strong>Compliance Boost:</strong> Skills Development and Employment Equity scorecard improvement.</li>
+                                        <li><strong>Talent Pipeline:</strong> Many hosted learners transition into full-time roles post-program.</li>
+                                        <li><strong>Positive Brand Impact:</strong> Contribute to youth employment and skills growth.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-8 md:pt-12 pb-16 md:pb-20 bg-bg-offset rounded-[3rem]">
+             <div class="container mx-auto px-6 reveal reveal-up">
+                <div class="text-center mb-12">
+                    <h2 class="h2">Other Services</h2>
+                    <p class="text-secondary max-w-3xl mx-auto mt-6">We offer a range of complementary services to help your business thrive.</p>
+                </div>
+                <div id="other-services-accordion" class="max-w-4xl mx-auto">
+                    <div class="other-services-accordion-item">
+                        <div class="other-services-header">
+                            <h3>B-BBEE Consulting</h3>
+                            <div class="other-services-toggle">▼</div>
+                        </div>
+                        <div class="other-services-content">
+                            <div class="other-services-content-inner">
+                                <p class="text-secondary mb-4"><strong>Our Approach:</strong> We see B-BBEE not as a hurdle but as a tool for growth. Our consultants analyse your current scorecard, identify cost-effective improvement areas, and create a plan that maximises points while aligning with your business goals.</p>
+                                <h4 class="font-bold text-lg mb-3 text-primary">What We Cover:</h4>
+                                <ul class="services-list space-y-2 text-secondary">
+                                    <li>Gap Analysis: Clear roadmap of what’s needed to reach your target level.</li>
+                                    <li>Skills Development Strategy: Leveraging learner hosting to meet key elements.</li>
+                                    <li>Audit Preparation: Organising evidence so verification runs smoothly.</li>
+                                    <li>Cost Optimisation: Access to government incentives, rebates, and SETA grants.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-services-accordion-item">
+                        <div class="other-services-header">
+                            <h3>Skills Development</h3>
+                            <div class="other-services-toggle">▼</div>
+                        </div>
+                        <div class="other-services-content">
+                            <div class="other-services-content-inner">
+                                <p class="text-secondary mb-4"><strong>Why It Matters:</strong> In South Africa’s evolving economy, skills are the competitive edge. Skills Development is also one of the largest elements on the B-BBEE scorecard, making it a strategic investment.</p>
+                                <h4 class="font-bold text-lg mb-3 text-primary">What We Deliver:</h4>
+                                <ul class="services-list space-y-2 text-secondary">
+                                    <li>NQF Level 1–5 training through accredited providers</li>
+                                    <li>Sector-specific programs tailored to your industry needs</li>
+                                    <li>Administration of Workplace Skills Plans and Annual Training Reports</li>
+                                    <li>Grant application and tax incentive support</li>
+                                    <li>Full integration with learner hosting for maximum points and ROI</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="industries" class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-20">
+                    <h2 class="h2 reveal reveal-up">Industries We Serve</h2>
+                    <p class="text-secondary text-lg max-w-3xl mx-auto mt-6 reveal reveal-up" style="--delay: 0.1s;">We have successfully placed learners in a wide range of sectors, providing adaptable talent where you need it most.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center max-w-6xl mx-auto reveal reveal-up" style="--delay: 0.2s;">
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">Business & Office Admin</h3><p class="text-xs text-secondary mt-1">Reception, PA, data entry</p></div>
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">Human Resources</h3><p class="text-xs text-secondary mt-1">HR admin, employee relations</p></div>
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">Marketing & Sales</h3><p class="text-xs text-secondary mt-1">Social media, customer engagement</p></div>
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">Finance & Accounting</h3><p class="text-xs text-secondary mt-1">Bookkeeping, payroll, reporting</p></div>
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">IT & Systems Development</h3><p class="text-xs text-secondary mt-1">Tech support, software, coding</p></div>
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">Engineering & Technical</h3><p class="text-xs text-secondary mt-1">Welding, electrical, mechanical</p></div>
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">Hospitality & Tourism</h3><p class="text-xs text-secondary mt-1">Front desk, guest services</p></div>
+                    <div class="border border-color rounded-2xl p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg" style="background-color: var(--color-bg-card);"><h3 class="font-bold">Early Childhood Dev.</h3><p class="text-xs text-secondary mt-1">Teaching assistance, care support</p></div>
+                </div>
+                <div class="text-center mt-16 reveal reveal-up">
+                    <a href="https://da684c74-4877-4c07-a586-b3f4d8edcf87.usrfiles.com/ugd/da684c_240332cc396744889a7366add0ef5ade.pdf" class="font-bold text-primary hover:text-brand transition-colors">For a full list, see our Candidate Industry Guide.</a>
+                    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="mailto:systems@whitepaperconcepts.co.za" class="btn btn-gradient-animated">Book a Free Consultation</a>
+                        <a href="https://da684c74-4877-4c07-a586-b3f4d8edcf87.usrfiles.com/ugd/da684c_240332cc396744889a7366add0ef5ade.pdf" class="btn btn-orange">Download Our Placement Guide</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-wps" class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="bg-bg-offset border border-color rounded-3xl grid lg:grid-cols-2 overflow-hidden">
+                    <div class="relative p-8 md:p-12 flex flex-col justify-center text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop');">
+                        <div class="absolute inset-0 bg-blue-900/80"></div>
+                        <div class="relative reveal reveal-up">
+                            <h2 class="h2 text-white">Why Partner With WPS?</h2>
+                            <p class="text-gray-300 mt-8">We deliver more than just staffing solutions; we deliver a strategic partnership that yields financial and social returns.</p>
+                            <div class="mt-8">
+                                <a href="#contact" class="btn bg-white text-black hover:bg-gray-200">START TODAY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 md:p-12 reveal reveal-up" style="--delay: 0.2s;">
+                        <div class="space-y-6">
+                            <div class="border-t border-color pt-4"><strong>Dedicated TEAM:</strong> We prioritise both Learner and Host employer for best results</div>
+                            <div class="border-t border-color pt-4"><strong>Cost Savings:</strong> Cut workforce expenses by up to 80%</div>
+                            <div class="border-t border-color pt-4"><strong>Compliance Boost:</strong> Earn B-BBEE points without extra admin</div>
+                            <div class="border-t border-color pt-4"><strong>End-to-End Service:</strong> We manage the process from recruitment to reporting</div>
+                            <div class="border-t border-color pt-4"><strong>Social Impact:</strong> Help tackle youth unemployment in South Africa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="py-8 md:py-12">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="h2">Frequently Asked Questions</h2>
+                </div>
+                <div id="faq-accordion" class="max-w-3xl mx-auto">
+                    <div class="faq-accordion-item">
+                        <div class="faq-header">
+                            <h3>What’s the catch — how are learners free?</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-content">
+                            <p>Learners are funded through government-backed accredited learnership programs. Your only cost is the admin fee, which covers all recruitment, management, and compliance work.</p>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <div class="faq-header">
+                            <h3>Do we choose the learners?</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-content">
+                            <p>Yes. We pre-screen candidates and present you with profiles to select from.</p>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <div class="faq-header">
+                            <h3>Will learners be productive?</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-content">
+                            <p>Yes — learners are matched to roles that suit their training, and we work closely with you to ensure they contribute meaningfully.</p>
+                        </div>
+                    </div>
+                    <div class="faq-accordion-item">
+                        <div class="faq-header">
+                            <h3>What if there are performance issues?</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-content">
+                            <p>WPS manages all learner support and will replace unsuitable candidates if necessary.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="py-16 md:py-20 bg-bg-offset">
+             <div class="container mx-auto px-6">
+                <div class="rounded-3xl p-8 md:p-16 text-center text-white reveal reveal-up flex flex-col items-center justify-center" style="background: linear-gradient(135deg, #0f1fb0 0%, #2a65f6 100%);">
+                    <h2 class="h2 text-white mb-8">Ready to grow your workforce and save costs?</h2>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                        <a href="mailto:systems@whitepaperconcepts.co.za" class="btn bg-white/20 hover:bg-white/30 text-white border border-white/30 w-full sm:w-auto">Email Us Directly</a>
+                        <a href="tel:+27784381295" class="btn bg-white/20 hover:bg-white/30 text-white border border-white/30 w-full sm:w-auto">Call Directly</a>
+                    </div>
+                    <img src="https://static.wixstatic.com/media/da684c_d9200bea5bb1423ab682a9a8943d13fd~mv2.png" alt="WPS Abstract Logo" class="w-full max-w-xs sm:max-w-md mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <div class="py-8 border-t border-b border-color">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span class="text-2xl font-bold text-secondary">Save</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Comply</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Grow</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Save</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Comply</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Grow</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                </div>
+                 <div class="marquee-content" aria-hidden="true">
+                    <span class="text-2xl font-bold text-secondary">Save</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Comply</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Grow</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Save</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Comply</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                    <span class="text-2xl font-bold text-secondary">Grow</span>
+                    <span class="text-2xl font-bold text-brand">+</span>
+                </div>
+            </div>
+        </div>
+
+
+        <footer id="contact" class="py-20 text-white" style="background: linear-gradient(180deg, #0f1fb0 0%, #2a65f6 100%);">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                    <div class="space-y-4">
+                        <a href="#home" class="h3 text-white font-bold">White Paper Systems</a>
+                        <p class="text-gray-300 text-sm">Visionary workforce solutions that deliver measurable business impact.</p>
+                        <div class="flex space-x-4 mt-4 justify-center md:justify-start">
+                            <a href="https://www.facebook.com/profile.php?id=61570161689419" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                            </a>
+                            <a href="https://www.instagram.com/Hellowhitepaper/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.316 1.363.364 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.316-2.427.364-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.316-1.363-.364-2.427C2.013 15.315 2 14.97 2 12.247v-.08c0-2.643.012-2.987.06-4.043.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.316 2.427-.364C8.901 2.013 9.24 2 11.877 2h.438zM12 6.426a5.575 5.575 0 100 11.15 5.575 5.575 0 000-11.15zm0 9.25a3.675 3.675 0 110-7.35 3.675 3.675 0 010 7.35zM16.832 6.182a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" clip-rule="evenodd" /></svg>
+                            </a>
+                            <a href="https://twitter.com/hellowhitepaper" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/white-paper-concepts/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                        <div class="mt-4 text-sm">
+                            <a href="https://www.whitepaperconcepts.co.za/termsofuse" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+                            <span class="text-gray-500 mx-2">|</span>
+                            <a href="https://www.whitepaperconcepts.co.za/privacypolicy" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="h3 font-bold text-white">Navigation</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="#intro" class="hover:text-white transition-colors">About</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                            <li><a href="#industries" class="hover:text-white transition-colors">Industries</a></li>
+                            <li><a href="#why-wps" class="hover:text-white transition-colors">Why WPS</a></li>
+                            <li><a href="https://www.whitepaperconcepts.co.za/blog/categories/strategies-for-small-businesses" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="h3 font-bold text-white">Get In Touch</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><p>57 Street Joseph Avenue, Pretoria, Gauteng, 0021</p></li>
+                            <li><a href="tel:+27872651890" class="hover:text-white transition-colors">Tel: +27 (0) 87 265 1890</a></li>
+                            <li><a href="tel:+27784381295" class="hover:text-white transition-colors">Mobile: +27 (0) 78 438 1295</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-20 pt-8 border-t border-white/20 text-center text-gray-300 text-sm">
+                    <p>&copy; 2025 White Paper Concepts (Pty) LTD. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        const homeSection = document.getElementById('home');
+        if (homeSection) {
+            const handleScroll = () => {
+                if (window.scrollY > 10) {
+                    homeSection.classList.add('scrolled');
+                } else {
+                    homeSection.classList.remove('scrolled');
+                }
+            };
+            handleScroll();
+            window.addEventListener('scroll', handleScroll, { passive: true });
+        }
+        
+        const themeSwitcher = document.getElementById('theme-switcher');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        const htmlEl = document.documentElement;
+
+        function setTheme(theme) {
+            localStorage.setItem('theme', theme);
+            if (theme === 'light') {
+                htmlEl.classList.add('light');
+                htmlEl.classList.remove('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                htmlEl.classList.add('dark');
+                htmlEl.classList.remove('light');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            }
+        }
+        themeSwitcher.addEventListener('click', () => {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+        setTheme(localStorage.getItem('theme') || 'light');
+        
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') mobileMenu.classList.add('hidden');
+        });
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        const accordionContainer = document.getElementById('accordion-container');
+        if (accordionContainer) {
+            accordionContainer.querySelectorAll('.accordion-item').forEach((item, index) => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const innerContent = content.querySelector('.accordion-content-inner');
+
+                if (index === 0) {
+                    item.classList.add('active');
+                    setTimeout(() => {
+                        content.style.maxHeight = innerContent.scrollHeight + 80 + 'px';
+                    }, 100);
+                }
+                header.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    accordionContainer.querySelectorAll('.accordion-item').forEach(i => {
+                        i.classList.remove('active');
+                        i.querySelector('.accordion-content').style.maxHeight = '0';
+                    });
+                    if (!isActive) {
+                        item.classList.add('active');
+                        content.style.maxHeight = innerContent.scrollHeight + 80 + 'px';
+                    }
+                });
+            });
+        }
+
+        const otherServicesAccordion = document.getElementById('other-services-accordion');
+        if (otherServicesAccordion) {
+            otherServicesAccordion.querySelectorAll('.other-services-accordion-item').forEach(item => {
+                const header = item.querySelector('.other-services-header');
+                const content = item.querySelector('.other-services-content');
+                const innerContent = content.querySelector('.other-services-content-inner');
+
+                header.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    if (item.classList.contains('active')) {
+                        content.style.maxHeight = innerContent.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = '0';
+                    }
+                });
+            });
+        }
+
+        const faqAccordion = document.getElementById('faq-accordion');
+        if (faqAccordion) {
+            faqAccordion.querySelectorAll('.faq-accordion-item').forEach(item => {
+                const header = item.querySelector('.faq-header');
+                const content = item.querySelector('.faq-content');
+
+                header.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        item.classList.remove('active');
+                        content.style.maxHeight = '0';
+                    }
+                });
+            });
+        }
+
+        function initializeTabs(containerId) {
+            const tabsContainer = document.getElementById(containerId);
+            if (tabsContainer) {
+                const tabButtons = tabsContainer.querySelectorAll('.tab-button');
+                const tabPanesContainer = tabsContainer.nextElementSibling;
+                
+                if (!tabPanesContainer) return;
+                const tabPanes = tabPanesContainer.querySelectorAll('.tab-pane');
+
+                tabsContainer.addEventListener('click', (e) => {
+                    const clickedButton = e.target.closest('.tab-button');
+                    if (!clickedButton) return;
+
+                    tabButtons.forEach(button => button.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.add('hidden'));
+
+                    clickedButton.classList.add('active');
+                    const tabId = clickedButton.dataset.tab;
+                    const activePane = document.getElementById(tabId);
+                    if (activePane) {
+                        activePane.classList.remove('hidden');
+                    }
+                });
+            }
+        }
+        initializeTabs('values-tabs');
+
+        const cursor = document.querySelector('.custom-cursor');
+        window.addEventListener('mousemove', e => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        const hoverables = document.querySelectorAll('a, button, .accordion-header, .other-services-header, .faq-header');
+        hoverables.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+
+    });
+    </script>
+
+</body>
+</html>
